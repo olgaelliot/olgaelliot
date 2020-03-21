@@ -1,5 +1,5 @@
 :root {
-  --font-size-l: 24px;
+--font-size-l: 24px;
 --font-size-m: 16px;
 --font-size-s: 12px;
 --line-height: 1.15em;
@@ -46,33 +46,33 @@ li {
 
   .container1, .container2 {
   margin-top: 10px;
-  width: 40px;
+  width: 30px;
   height: 55px;
   border-radius: 50%;
   position: relative;
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 15px;
   }
 
   .container2 {
-    margin-left: 12px;
+    margin-left: 6px;
   }
 
+/*
   .ball1, .ball2 {
-  width: 9px;
-  height: 9px;
+  width: 6px;
+  height: 6px;
   background-color: green;
   border-radius: 50%;
   position: absolute;
   right: 20px;
-  top: 22px;
+  top: 12px;
   margin-left: 8px;
   }
-
+*/
   #name {
     font-family: Arial;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 40px;
     margin: 0;
     position: absolute;
     display: block;
@@ -86,7 +86,7 @@ li {
     cursor: pointer;
     padding: 10px;
     float: right;
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .info-button:hover {
@@ -118,7 +118,7 @@ li {
 
   .info-content li{
   font-family: Arial;
-  font-size: 20px;
+  font-size: 16px;
   }
 
   .show {
@@ -130,7 +130,7 @@ body {
 }
 
 h1, button, .info-content ul {
-  font-size: 28px;
+  font-size: 16px;
   font-family: Arial;
   font-weight: 400;
   padding-left: 10px;
@@ -160,7 +160,7 @@ a:hover {
 }
 
 #spec, li{
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 10px;
   font-family: Arial-Italic;
 }
@@ -187,8 +187,8 @@ display: table;
   float: right;
   width: 50vw;
   font-family: Austin;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
   z-index:0;
 }
 
@@ -207,7 +207,7 @@ display: table;
 }
 
 #left-col a img{
-  width:12vw;
+  width:10vw;
   margin-top: 6px;
   cursor: zoom-in;
 }
@@ -217,11 +217,10 @@ display: table;
   background-size: contain;
   background-repeat: no-repeat;
   position: fixed;
-  height: 800px;
-  width: 800px;
+  height: 40em;
+  width: 40em;
   top:4vw;
-  left:0vw;
-  transform: translate(50%);
+  left:25vw;
   visibility: hidden;
 }
 
