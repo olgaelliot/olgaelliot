@@ -46,37 +46,36 @@ li {
 
   .container1, .container2 {
   margin-top: 10px;
-  width: 30px;
+  width: 19px;
   height: 55px;
   border-radius: 50%;
+  border-color: black 1px;
   position: relative;
   display: inline-block;
-  padding-left: 15px;
+  padding-left: 35px;
   }
 
   .container2 {
-    margin-left: 6px;
+    margin-left: -12px;
   }
 
-/*
+
   .ball1, .ball2 {
   width: 6px;
   height: 6px;
   background-color: green;
   border-radius: 50%;
   position: absolute;
-  right: 20px;
-  top: 12px;
-  margin-left: 8px;
+  right: 22px;
+  top: 21px;
+  margin-left: 12px;
   }
-*/
+
   #name {
     font-family: Arial;
     font-size: 40px;
-    margin: 0;
+    left: 10px;
     position: absolute;
-    display: block;
-    top: -5px;
     width: 100vw;
   }
 
