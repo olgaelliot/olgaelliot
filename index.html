@@ -1,31 +1,35 @@
 <!DOCTYPE html>
     <html>
     <head>
+      <title>Olga Elliot</title>
+      <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./favicon.ico" type="image/x-icon">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Olga Elliot</title>
-          <link rel="stylesheet" href="style.css"/>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-          <link rel="icon" href="favicon.ico" type="image/x-icon">
-      </head>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
       <body>
-        <body>
-    <div class="animation">
-      <div class="container1">
-        <div id="name">OLGA ELLIOT</div>
-          <div class="ball1"></div>
-      </div>
-        <div class="container2">
-         <div class="ball2"></div>
-      </div>
-    </div>
-  </body>
+        <div class="animation">
+          <div class="container1">
+            <div id="name">OLGA ELLIOT</div>
+              <div class="ball1"></div>
+          </div>
+            <div class="container2">
+             <div class="ball2"></div>
+          </div>
+        </div>
         <nav class="topbar">
           <button id="info" class="info-button">INFO</button>
           <div id="myInfo" class="info-content">
             <ul>About</ul>
-              <li> Olga Elliot is a yet-to-be-based graphic designer, working in many ways across different media, with a keen interest in printed matter.</li>
+              <li> Olga Elliot is a yet-to-be-based graphic designer, engaging with content accross different media.</li>
+            <ul>Participation</ul>
+              <li>JEOPARDY by the Laumihat, Radio Palanga, Vilnius.    2020</li>
+              <li>ROYAL CULT CLUB, Royal Academy of Arts, the Hague.   2019</li>
+              <li>Utopian Cultural Heritage, The Grey Space in the Middle, the Hague.   2018</li>
+              <li>In the Future..., The Grey Space in the Middle, the Hague.   2018</li>
+              <li>Gaps, Margins and Fillers, Royal Academy of Arts, the Hague.   2017</li>
             <ul>Education</ul>
               <li>2015    Krabbesholm Højskole, Graphic Design</li>
               <li>2016    Copenhagen Technical College, Graphic Technician</li>
@@ -33,6 +37,7 @@
               <li>2020    Aalto Arts, Visual Communication Design</li>
             <ul>Contact</ul>
         	    <li>info(at)olgaelliot.xyz</li>
+            <ul>CV upon request</ul>
           </div>
         </nav>
         <div class="projects">
@@ -40,7 +45,7 @@
             <div class"title"><h1>A PICTURE OF A WORD</h1></div>
             <div id="spec">Collaborative publication, edition of 25</p><span class="year">2020</span></div>
             <div class="main-col">
-              <p>A picture of a word is a curious exploration of language and image.<br>Co-authoring, co-editing and designing collective contributions, was all done within a week. The publication was made during, the <span class="italic">Toolkit for Language, Writing & Bookmaking</span> with Tine Melzer at Aalto university VCD department in February.</p>
+              <p>A picture of a word is a curious exploration of language and image. Co-authoring, co-editing and designing collective contributions, was all done within a week. The publication was made during, the <span class="italic">Toolkit for Language, Writing & Bookmaking</span> with Tine Melzer at Aalto University VCD department in February.</p>
             </div>
             <ul id="left-col">
               <li> <a href="#"> <img src="project01/api1-thumb.png">
@@ -338,35 +343,6 @@ Written thirty years apart, both authors argue for a critical approach to images
   </div>
 </div>
 <div id="last-div"></div>
-
-<script>
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("info").onclick = function() {myFunction()};
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-  document.getElementById("myInfo").classList.toggle("show");
-}
-
-$(document).ready(function(){
-  $('body').mousemove(function(e){
-     var x = e.pageX - this.offsetLeft;
-
-    if (x <= 8) {
-         $('div.ball1').css({'left': x});
-      }
-  });
-});
-$(document).ready(function(){
-  $('body').mousemove(function(e){
-     var x = e.pageX - this.offsetLeft;
-
-    if (x <= 8) {
-         $('div.ball2').css({'left': x});
-      }
-  });
-});
-
-</script>
+<script src="script.js"></script>
       </body>
       </html>
