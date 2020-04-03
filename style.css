@@ -63,7 +63,7 @@ li {
   .ball1, .ball2 {
   width: 6px;
   height: 6px;
-  background-color: green;
+  background-color: limegreen;
   border-radius: 50%;
   position: absolute;
   right: 22px;
@@ -89,7 +89,7 @@ li {
   }
 
   .info-button:hover {
-    color: #3e8e41;
+    color: limegreen;
   }
 
   .topbar {
@@ -112,7 +112,7 @@ li {
 
   .info-content ul{
   padding: 10px;
-  color: green;
+  color: limegreen;
   }
 
   .info-content li{
@@ -141,7 +141,7 @@ a, a:visited {
 }
 
 a:hover {
-  color: green;
+  color: limegreen;
   }
 
 .projects{
@@ -197,7 +197,7 @@ display: table;
 }
 
 .main-col a:hover {
-  color: green;
+  color: limegreen;
   }
 
 #left-col {
