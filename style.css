@@ -36,8 +36,8 @@ body {
 
 .animation {
   position: fixed;
-  left: 80%;
-  top: 80%;
+  left: 88%;
+  top: 86%;
   font-size: 7vh;
   line-height: 6vh;
   font-family: Arial;
@@ -56,7 +56,7 @@ body {
   border-color: black 1px;
   position: relative;
   display: inline-block;
-  padding-left: 35px;
+  padding-left: 5vh;
   }
 
 .container2 {
