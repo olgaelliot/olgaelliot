@@ -14,23 +14,18 @@ function indexClose() {
   document.getElementById("myIndex").classList.toggle("close-index");
 }
 
+var balls = document.getElementsByClassName("ball");
+document.onmousemove = function(){
+  var x = event.clientX * 100 / window.innerWidth + "%";
+  var y = event.clientY * 100 / window.innerHeight + "%";
+  //event.clientX => get the horizontal coordinate of the mouse
+  //event.clientY => get the Vertical coordinate of the mouse
+  //window.innerWidth => get the browser width
+  //window.innerHeight => get the browser height
 
-
-$(document).ready(function(){
-  $('body').mousemove(function(e){
-     var x = e.pageX - this.offsetLeft;
-
-    if (x <= 12) {
-         $('div.ball1').css({'left': x});
-      }
-  });
-});
-$(document).ready(function(){
-  $('body').mousemove(function(e){
-     var x = e.pageX - this.offsetLeft;
-
-    if (x <= 12) {
-         $('div.ball2').css({'left': x});
-      }
-  });
-});
+  for(var i=0;i<2;i++){
+    balls[i].style.left = x;
+    balls[i].style.top = y;
+    balls[i].style.transform = "translate(-"+x+",-"+y+")";
+  }
+}

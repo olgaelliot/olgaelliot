@@ -12,8 +12,9 @@ li {
 }
 
 @font-face {
-    font-family: "Austin";
-    src: url("Austin.ttf");
+  font-family: "Austin";
+  src: url("AustinNewsDeck-Light.woff2") format('woff2'),
+       url('Austin.ttf') format('ttf');
   }
 
 @font-face {
@@ -22,12 +23,15 @@ li {
   }
 @font-face {
   font-family: "Arial";
-  src: url("ArialNarrow.ttf");
-}
+  src: url("ArialNarrow.woff2") format('woff2'),
+       url('ArialNarrow.ttf') format('ttf');
+  }
 
 @font-face {
   font-family: "Arial-Italic";
-  src: url("ArialNarrowItalic.ttf");
+  src: url("ArialNarrow-Italic.woff2") format('woff2'),
+       url("ArialNarrowItalic.ttf") format('ttf');
+
 }
 
 body {
@@ -36,19 +40,44 @@ body {
 
 .animation {
   position: fixed;
-  left: 88%;
-  top: 86%;
+  top: 88vh;
+  left: 88vw;
   font-size: 7vh;
-  line-height: 6vh;
-  font-family: Arial;
   z-index: 10000;
 }
 
 .name {
   position: absolute;
   text-align: right;
+  line-height: 6vh;
+  font-family: Arial;
 }
 
+.eye{
+  width: 4vh;
+  height: 5vh;
+  left: 2vh;
+  display: inline-block;
+  margin-left: 2vh;
+  border-radius: 50%;
+  position: relative;
+  top: -1vh;
+  overflow: hidden;
+}
+
+.ball{
+  width: 1vh;
+  height: 1vh;
+  background: #00b300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+
+/*
 .container1, .container2 {
   width: 3vh;
   height: 55px;
@@ -73,14 +102,6 @@ body {
   top: 21px;
   left: 1vw;
   }
-/*
-#name {
-  font-family: Arial;
-  font-size: 3em;
-  float: right;
-  position: absolute;
-  width: 100vw;
-}
 */
 
 .topbar {
@@ -147,7 +168,7 @@ button:hover {
 
 .info-content li{
   font-family: Arial-Italic;
-  font-size: 1 vw;
+  font-size: 1.2vw;
 }
 
 .show-info, .show-index {
