@@ -1,6 +1,12 @@
 * {
   margin:0;
   padding: 0;
+  -webkit-text-size-adjust: 120%;
+  -ms-text-size-adjust: 100%;
+}
+
+*:focus {
+    outline: none;
 }
 
 img {
@@ -31,8 +37,9 @@ li {
   font-family: "Arial-Italic";
   src: url("ArialNarrow-Italic.woff2") format('woff2'),
        url("ArialNarrowItalic.ttf") format('ttf');
-
 }
+
+
 
 body {
   height: 100vh;
@@ -149,7 +156,7 @@ button:hover {
   font-size: 1.2vw;
 }
 
-.show-info, .show-index {
+.show-info, .show-index, .index-close {
   display:block;
 }
 

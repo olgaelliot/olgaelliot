@@ -1,7 +1,7 @@
 // Get the button, and when the user clicks on it, executes myFunction
 document.getElementById("info").onclick = function() {infoShow()};
 document.getElementById("index").onclick = function() {indexShow()};
-document.getElementsByClassName("index-project").onclick = function() {indexShow()};
+document.getElementsByTagName("H1").onclick = function() {indexClose()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function infoShow() {
@@ -9,6 +9,9 @@ function infoShow() {
 }
 function indexShow() {
   document.getElementById("myIndex").classList.toggle("show-index");
+}
+function indexClose() {
+  document.getElementById("myIndex").classList.toggle("close-index");
 }
 
 var balls = document.getElementsByClassName("ball");
