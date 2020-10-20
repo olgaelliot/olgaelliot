@@ -17,6 +17,8 @@ li {
   list-style-type: none;
 }
 
+
+
 @font-face {
   font-family: "Austin";
   src: url("AustinNewsDeck-Light.woff2") format('woff2'),
@@ -38,8 +40,6 @@ li {
   src: url("ArialNarrow-Italic.woff2") format('woff2'),
        url("ArialNarrowItalic.ttf") format('ttf');
 }
-
-
 
 body {
   height: 100vh;
@@ -110,7 +110,7 @@ button:hover {
   position: absolute;
   background-color: #f8f8f8;
   width: 100%;
-  height: 100vh;
+  height: 93vh;
   top: 6.5vh;
   margin: 1vw;
 }
@@ -156,7 +156,7 @@ button:hover {
   font-size: 1.2vw;
 }
 
-.show-info, .show-index, .index-close {
+.show-info, .show-index{
   display:block;
 }
 
@@ -209,11 +209,16 @@ a:hover {
   top:0px;
   right: 33vw;
   float: right;
-  width: 50vw;
+  width: 52vw;
   font-family: Austin;
   font-size: 5vh;
   line-height: 5.5vh;
   z-index:0;
+}
+
+#square {
+  margin-left: 5%;
+  max-width: 40%;
 }
 
 #left-col {
@@ -232,9 +237,9 @@ a:hover {
   background-repeat: no-repeat;
   position: fixed;
   height: 90vh;
-  width: 96vh;
+  width: 98vh;
   top:4vw;
-  left:17vw;
+  left:16vw;
   visibility: hidden;
   z-index: 1000;
 }
