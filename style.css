@@ -1,8 +1,11 @@
 * {
   margin:0;
   padding: 0;
+  text-rendering: auto;
   -webkit-text-size-adjust: 120%;
   -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *:focus {
@@ -17,6 +20,20 @@ li {
   list-style-type: none;
 }
 
+/*
+@font-face {
+font-family: adobe-caslon-pro, Times, serif;
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: adobe-caslon-pro,serif;
+font-weight: 400;
+font-style: italic;
+}
+
+
 @font-face {
   font-family: "Austin";
   src: url("AustinNewsDeck-Light.woff2") format('woff2'),
@@ -27,6 +44,8 @@ li {
     font-family: "Austin-Italic";
     src: url("Austin-LightItalic.ttf");
   }
+*/
+
 @font-face {
   font-family: "Arial";
   src: url("ArialNarrow.woff2") format('woff2'),
@@ -38,6 +57,7 @@ li {
   src: url("ArialNarrow-Italic.woff2") format('woff2'),
        url("ArialNarrowItalic.ttf") format('ttf');
 }
+
 
 body {
   height: 100vh;
@@ -217,8 +237,11 @@ a:hover {
   right: 33vw;
   float: right;
   width: 52vw;
-  font-family: Austin;
+  font-family: adobe-caslon-pro, Times, serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 5vh;
+  letter-spacing: -0.1vh;
   line-height: 5.5vh;
   z-index:0;
 }
@@ -251,7 +274,8 @@ a:hover {
 }
 
 .italic{
-  font-family: Austin-Italic;
+  font-family: adobe-caslon-pro;
+  font-style: italic;
 }
 
 #last-div {
