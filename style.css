@@ -49,7 +49,7 @@ body {
   position: absolute;
   text-align: right;
   line-height: 6vh;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 .eye {
@@ -85,7 +85,7 @@ button {
   border: none;
   background-color: #f8f8f8;
   padding: 1vw;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 7vh;
   line-height: 6vh;
 }
@@ -96,7 +96,7 @@ button:hover {
 
 .index-content {
   font-size: 16px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   display: none;
   overflow: auto;
@@ -147,7 +147,7 @@ button:hover {
 }
 
 .info-content li {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -179,7 +179,7 @@ a:hover {
 
 .section h1, .index-column h1, .info-content ul {
   font-size: 16px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -191,7 +191,7 @@ a:hover {
 }
 
 #spec {
-  font-family: Arial-Italic;
+  font-family: Arial-Italic, sans-serif;
   font-size: 16px;
 }
 
@@ -247,29 +247,6 @@ a:hover {
   visibility: visible;
 }
 
-@media only screen and (max-width: 600px) {
-  #left-col {
-    white-space: nowrap;
-    position: sticky;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 90vh;
-    width: 98vw;
-    overflow-x: auto;
-    }
-
-    #left-col li {
-    display: inline;
-    height: 50vw;
-  }
-
-.main-col {
-position: relative;
-float: none;
-left: 1vw;
-  }
-}
-
 .italic{
   font-family: adobe-caslon-pro;
   font-style: italic;
@@ -298,13 +275,28 @@ left: 1vw;
   }
 
   .main-col {
-      width: 80%;
-      margin-left: 5%;
+      width: 85%;
+      position: relative;
+      float: none;
+      left: 1vw;
+      margin-left: 3%;
+      font-size: 4vh;
+      line-height: 4.5vh;
+    }
+
+    #left-col {
+      white-space: nowrap;
+      position: sticky;
+      overflow-x: auto;
+      width: 90vw;
+      }
+
+      #left-col li {
+      display: inline;
     }
 
     #left-col a img{
-      width: 90%;
-      margin: 15px;
+      width:90vw; s
     }
 
     #left-col a:hover .hid{
