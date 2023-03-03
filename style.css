@@ -48,8 +48,8 @@ body {
 
 .animation {
   position: fixed;
-  top: 88vh;
-  left: 88vw;
+  bottom: 40px;
+  right: 60px;
   font-size: 7vh;
   z-index: 10000;
 }
@@ -273,7 +273,7 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
   .animation {
-    visibility: hidden;
+    visibility: visible;
   }
 
 .index-content, .info-content {
