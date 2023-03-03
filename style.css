@@ -285,7 +285,7 @@ a:hover {
   }
 
   .year {
-    visibility: visible;
+    visibility: hidden;
     margin-right: 20px;
   }
 
