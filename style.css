@@ -37,6 +37,15 @@ body {
   height: 100vh;
 }
 
+.update {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .animation {
   position: fixed;
   top: 88vh;
@@ -94,7 +103,12 @@ button:hover {
   color: #00b300;
 }
 
+.index-button {
+    visibility: hidden;
+}
+
 .index-content {
+  visibility: hidden;
   font-size: 16px;
   font-family: Arial, sans-serif;
   font-weight: 400;
@@ -168,6 +182,7 @@ a:hover {
 }
 
 .projects{
+  visibility: hidden;
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
