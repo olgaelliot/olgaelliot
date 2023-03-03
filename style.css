@@ -48,8 +48,8 @@ body {
 
 .animation {
   position: fixed;
-  bottom: 40px;
-  right: 60px;
+  bottom: 50px;
+  right: 70px;
   font-size: 7vh;
   z-index: 10000;
 }
