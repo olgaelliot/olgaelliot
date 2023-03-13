@@ -197,10 +197,12 @@ body {
     font-size: 12px;
     line-height: 14px;
   }
+
+  img, video {
+  height: 90vh; 
+  }
+
 .animation {
-  top:88vh;
-}
-  .eyes {
     visibility: hidden;
   }
   .info-content {
