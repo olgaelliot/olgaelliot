@@ -28,6 +28,7 @@ li {
 body {
   background-color: #eeeeee;
   font-family: shree714, Arial, sans-serif;
+  height: 100vh;
 }
 
 .topbar {
