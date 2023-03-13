@@ -43,7 +43,7 @@ body {
 }
 
 .topbar button:hover {
-  color: #00b300;
+  color: #008000;
 }
 
 button {
@@ -63,6 +63,7 @@ button {
   text-align: left;
   line-height: 56px;
   text-transform: none;
+  color: black;
 }
 
 .info-content {
@@ -118,7 +119,7 @@ button {
 .ball {
   width: 10px;
   height: 10px;
-  background: #00b300;
+  background: #008000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -131,7 +132,7 @@ a, a:visited {
 }
 
 a:hover {
-  color: #00b300;
+  color: ##008000;
 }
 
 .slide-container {
@@ -197,9 +198,8 @@ body {
     font-size: 12px;
     line-height: 14px;
   }
-
   img, video {
-  height: 90vh; 
+  height: 90vh;
   }
 
 .animation {
