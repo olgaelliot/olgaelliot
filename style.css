@@ -199,6 +199,10 @@ body {
     height: 100vh;
   }
 
+.info-button {
+bottom: 15px;
+}
+
 .animation {
     visibility: hidden;
   }
