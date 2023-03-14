@@ -221,6 +221,14 @@ body {
       object-fit:cover;
   }
 
+  .change-height {
+    height: 20vh;
+  }
+
+  .captions {
+    top: 5vh;
+  }
+
 .animation {
     visibility: hidden;
   }
