@@ -197,9 +197,6 @@ body {
     font-size: 12px;
     line-height: 14px;
   }
-  img, video {
-  height: 90vh;
-  }
 
 .animation {
     visibility: hidden;
