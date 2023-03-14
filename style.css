@@ -37,13 +37,12 @@ body {
   z-index: 1001;
 }
 
-
 .topbar button {
   border: none;
 }
 
 .topbar button:hover {
-  color: #008000;
+  color: #4a7fff;
 }
 
 button {
@@ -119,7 +118,7 @@ button {
 .ball {
   width: 10px;
   height: 10px;
-  background: #008000;
+  background: #4a7fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -132,7 +131,7 @@ a, a:visited {
 }
 
 a:hover {
-  color: ##008000;
+  color: #4a7fff;
 }
 
 .slide-container {
@@ -201,7 +200,6 @@ body {
   img, video {
   height: 90vh;
   }
-  
 
 .animation {
     visibility: hidden;
