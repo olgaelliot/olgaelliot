@@ -8,10 +8,10 @@ document.getElementById("info").onclick = function() {hideButton()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function infoShow() {
-  document.getElementById("myInfo").classList.toggle("show-info");
   document.getElementById("face").classList.toggle("hide-face");
-  document.getElementById("slides").classList.toggle("change-height");
+  document.getElementById("top").classList.toggle("change-height");
 }
+
 /*
 function slidesCollapse() {
   document.getElementByClassName("slides").style.height;

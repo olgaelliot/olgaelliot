@@ -35,6 +35,8 @@ body {
   display: flex;
   width: 100%;
   z-index: 1001;
+  height: 0vh;
+  transition: height 500ms;
 }
 
 .topbar button {
@@ -43,6 +45,10 @@ body {
 
 .topbar button:hover {
   color: blue;
+}
+
+.change-height {
+  height: 10vh;
 }
 
 button {
@@ -54,7 +60,8 @@ button {
   display: block;
   z-index: 1300;
   position: fixed;
-  padding: 15px;
+  bottom: 0;
+  padding-left: 15px;
   font-family: shree714, Arial, sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -66,20 +73,13 @@ button {
 }
 
 .info-content {
-  display: none;
   overflow: auto;
   text-align: right;
-  right: 15px;
+  right: 10px;
   font-style: normal;
-  z-index: 1400;
   max-width: 500px;
   position: absolute;
-  top: 3vh;
   padding: 10px;
-}
-
-.show-info {
-  display: block;
 }
 
 .hide-face {
@@ -88,7 +88,7 @@ button {
 
 .animation {
   position: fixed;
-  top: 5px;
+  bottom: 55px;
   right: 50px;
   padding: 1vh;
   z-index: 10000;
@@ -144,16 +144,15 @@ a:hover {
   z-index: 1;
 }
 
-
 img, video {
-  height: 100vh;
-   /*-webkit-fill-available !important;
-  height: -moz-available;          WebKit-based browsers will ignore this.
-  height: fill-available;
-  */
   vertical-align: middle;
   border-style: none;
   display: block;
+}
+
+.image-slide {
+  height: 100vh;
+  transition: height 500ms;
 }
 
 .slick-next.slick-arrow, .slick-prev.slick-arrow {
@@ -179,17 +178,18 @@ img, video {
 .controls {
   display: flex;
   width: 100%;
-  position: absolute;
   z-index: 2000;
+  position: fixed;
+  top: 0;
   }
 
 .captions {
-  padding: 15px;
+  padding: 10px;
   text-transform: uppercase;
   flex: 1;
   width: 100px;
   margin-left: 2px;
-  text-align: center;
+  top: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -199,9 +199,9 @@ body {
     height: 100vh;
   }
 
-.info-button {
-bottom: 5px;
-}
+  img, video{
+      object-fit:cover;
+  }
 
 .animation {
     visibility: hidden;
