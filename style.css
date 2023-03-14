@@ -74,15 +74,22 @@ button {
 
 .info-content {
   overflow: auto;
-  text-align: right;
-  right: 10px;
   font-style: normal;
   max-width: 500px;
   position: absolute;
   padding: 10px;
 }
 
-.hide-face {
+.info-content {
+  right: 10px;
+  text-align: right;
+}
+
+.show-info {
+  display: block;
+}
+
+.hide-face, .hide-button {
   display: none;
 }
 
@@ -190,6 +197,17 @@ img, video {
   width: 100px;
   margin-left: 2px;
   top: 0;
+}
+
+.caption-content{
+  text-transform: none;
+  overflow: auto;
+  font-style: normal;
+  display: none;
+}
+
+.show-caption {
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {
