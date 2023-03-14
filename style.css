@@ -196,6 +196,7 @@ img, video {
 body {
     font-size: 12px;
     line-height: 14px;
+    height: 100vh;
   }
 
 .animation {
