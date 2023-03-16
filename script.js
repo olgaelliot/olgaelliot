@@ -14,7 +14,6 @@ function infoShow() {
   document.getElementById("info").classList.toggle("hide-button");
   document.getElementById("top").classList.toggle("change-height");
 }
-
 /*
 function slidesCollapse() {
   document.getElementByClassName("slides").style.height;

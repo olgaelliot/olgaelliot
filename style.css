@@ -222,11 +222,7 @@ body {
   }
 
   .change-height {
-    height: 20vh;
-  }
-
-  .captions {
-    top: 5vh;
+    height: 25vh;
   }
 
 .animation {
@@ -234,6 +230,7 @@ body {
   }
   .info-content {
     left: 1vh;
+    top: 20vh;
   }
   .index-content, .info-content {
       font-size: 12px;
