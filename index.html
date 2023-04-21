@@ -29,8 +29,8 @@
         <nav id="top" class="topbar">
           <button id="info" class="info-button">INFO & <br>CONTACT</button>
           <div id="myInfo" class="info-content">
-              <li> Olga Elliot is a yet-to-be-based graphic designer, for inquiries contact
-              <a href="mailto:info@olgaelliot.xyz">info@olgaelliot.xyz</a>. CV and portfolio upon request.</li>
+              <p> Olga Elliot is a yet-to-be-based graphic designer, for inquiries contact
+              <a href="mailto:info@olgaelliot.xyz">info@olgaelliot.xyz</a>. CV and portfolio upon request.</p>
           </div>
         </nav>
         <div class="slide-container">
@@ -378,6 +378,14 @@
             fade: true,
           })
           });
+
+          document.getElementById("info").onclick = function() {infoShow()};
+
+          /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+          function infoShow() {
+            document.getElementById("myInfo").classList.toggle("show-info");
+            $(".caption-content").toggle('show-caption');
+          }
 
       </script>
     </body>

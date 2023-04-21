@@ -1,29 +1,5 @@
 // Get the button, and when the user clicks on it, executes myFunction
-document.getElementById("info").onclick = function() {infoShow()};
-/*
-document.getElementById("face").onclick = function() {slidesCollapse()};
 
-document.getElementById("info").onclick = function() {hideButton()};
-*/
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function infoShow() {
-  document.getElementById("myInfo").classList.toggle("show-info");
-  document.getElementsByClassName("caption-content").classList.toggle("show-caption");
-  document.getElementById("face").classList.toggle("hide-face");
-  document.getElementById("info").classList.toggle("hide-button");
-  document.getElementById("top").classList.toggle("change-height");
-}
-/*
-function slidesCollapse() {
-  document.getElementByClassName("slides").style.height;
-}
-*/
-/*
-function hideButton() {
-  document.getElementById("info").classList.toggle("info-button");
-}
-*/
 
 var balls = document.getElementsByClassName("ball");
 document.onmousemove = function(){

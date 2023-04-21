@@ -76,7 +76,7 @@ button {
   overflow: auto;
   font-style: normal;
   max-width: 500px;
-  position: absolute;
+  position: fixed;
   padding: 10px;
 }
 
@@ -87,6 +87,7 @@ button {
 
 .show-info {
   display: block;
+  z-index: 2;
 }
 
 .hide-face, .hide-button {
@@ -208,6 +209,7 @@ img, video {
 
 .show-caption {
   display: block;
+  z-index: 1000;
 }
 
 @media only screen and (max-width: 600px) {
@@ -221,19 +223,17 @@ body {
       object-fit:cover;
   }
 
-  .change-height {
-    height: 25vh;
-  }
+.caption-content {
+  display: none !important;
+}
 
 .animation {
     visibility: hidden;
   }
-  .info-content {
-    left: 1vh;
-    top: 12vh;
-  }
   .index-content, .info-content {
       font-size: 12px;
+      text-align: left;
+      margin-top: 20px;
     }
-
+  }
 }
