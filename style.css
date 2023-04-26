@@ -223,6 +223,11 @@ body {
       object-fit:cover;
   }
 
+  .info-button {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
 .caption-content {
   display: none !important;
 }
