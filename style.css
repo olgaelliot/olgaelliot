@@ -78,16 +78,19 @@ button {
   max-width: 500px;
   position: fixed;
   padding: 10px;
+  display: none;
+  z-index: 3000;
+  background-color: rgba(238, 238, 238, 0.94);
 }
 
 .info-content {
+  top: 60px;
   right: 10px;
   text-align: right;
 }
 
 .show-info {
   display: block;
-  z-index: 2;
 }
 
 .hide-face, .hide-button {
@@ -199,23 +202,32 @@ img, video {
   margin-left: 2px;
   top: 0;
 }
+.caption {
+  position: relative;
+}
 
 .caption-content{
   text-transform: none;
   overflow: auto;
   font-style: normal;
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-width: 50%;
+  padding-top: 6px;
+  background-color: rgba(238, 238, 238, 0.94);
+  z-index: 2500;
 }
 
 .show-caption {
   display: block;
-  z-index: 1000;
 }
 
 @media only screen and (max-width: 600px) {
 body {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 16px;
     height: 90vh;
   }
 
@@ -224,21 +236,23 @@ body {
   }
 
   .info-button {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 28px;
   }
-
-.caption-content {
-  display: none !important;
-}
 
 .animation {
-    visibility: hidden;
+    visibility: visible;
+    bottom: 10px;
+    right: 10px;
+    transform: scale(0.5);
+    transform-origin: bottom right;
   }
   .index-content, .info-content {
-      font-size: 12px;
+      font-size: 13px;
       text-align: left;
       margin-top: 20px;
     }
+  .caption-content {
+    font-size: 13px;
   }
 }
