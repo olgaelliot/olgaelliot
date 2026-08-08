@@ -69,7 +69,8 @@ button {
   text-align: left;
   line-height: 56px;
   text-transform: none;
-  color: black;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 .info-content {
@@ -80,11 +81,9 @@ button {
   padding: 10px;
   display: none;
   z-index: 3000;
-  background-color: rgba(238, 238, 238, 0.94);
 }
 
 .info-content {
-  top: 60px;
   right: 10px;
   text-align: right;
 }
@@ -108,10 +107,13 @@ button {
 
 .name {
   position: absolute;
+  right: 0;
   text-align: right;
   font-size: 56px;
   line-height: 56px;
   font-weight: 400;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 .eye {
@@ -202,20 +204,21 @@ img, video {
   margin-left: 2px;
   top: 0;
 }
-.caption {
-  position: relative;
-}
 
+.caption {
+  color: #ffffff;
+  mix-blend-mode: difference;
+}
 .caption-content{
   text-transform: none;
   overflow: auto;
   font-style: normal;
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
+  top: 45px;
+  left: 12px;
   max-width: 50%;
-  padding-top: 6px;
+  padding: 4px 0;
   background-color: rgba(238, 238, 238, 0.94);
   z-index: 2500;
 }
@@ -236,14 +239,15 @@ body {
   }
 
   .info-button {
+    bottom: 0;
     font-size: 28px;
     line-height: 28px;
   }
 
 .animation {
     visibility: visible;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0;
+    right: 25px;
     transform: scale(0.5);
     transform-origin: bottom right;
   }
