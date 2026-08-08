@@ -69,8 +69,7 @@ button {
   text-align: left;
   line-height: 56px;
   text-transform: none;
-  color: #ffffff;
-  mix-blend-mode: difference;
+  color: black;
 }
 
 .info-content {
@@ -107,13 +106,10 @@ button {
 
 .name {
   position: absolute;
-  right: 0;
   text-align: right;
   font-size: 56px;
   line-height: 56px;
   font-weight: 400;
-  color: #ffffff;
-  mix-blend-mode: difference;
 }
 
 .eye {
@@ -205,10 +201,6 @@ img, video {
   top: 0;
 }
 
-.caption {
-  color: #ffffff;
-  mix-blend-mode: difference;
-}
 .caption-content{
   text-transform: none;
   overflow: auto;
@@ -250,6 +242,11 @@ body {
     right: 25px;
     transform: scale(0.5);
     transform-origin: bottom right;
+  }
+
+  .name {
+    bottom: 0;
+    right: 0;
   }
   .index-content, .info-content {
       font-size: 13px;
