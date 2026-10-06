@@ -27,7 +27,7 @@ li {
 
 body {
   background-color: #eeeeee;
-  font-family: shree714, Arial, sans-serif;
+  font-family: shree714, helvetica, sans-serif;
   height: 100vh;
 }
 
@@ -248,6 +248,11 @@ body {
     bottom: 0;
     right: 0;
   }
+
+  .eyes {
+    transform: translate(-4vw, -3vh);
+  }
+
   .index-content, .info-content {
       font-size: 13px;
       text-align: left;
