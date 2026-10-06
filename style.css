@@ -245,11 +245,11 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    gap: 4vw;
+    gap: 6vw;
     /* How far to nudge the dots, in viewport-relative units so it scales
        across phone aspect ratios. Edit these two numbers to adjust —
        more negative = further left / further up. */
-    --dot-shift-x: 37vw;
+    --dot-shift-x: 39vw;
     --dot-shift-y: -13vh;
   }
 
