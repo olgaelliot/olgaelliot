@@ -249,8 +249,8 @@ body {
     /* How far to nudge the dots, in viewport-relative units so it scales
        across phone aspect ratios. Edit these two numbers to adjust —
        more negative = further left / further up. */
-    --dot-shift-x: -2vw;
-    --dot-shift-y: -4vh;
+    --dot-shift-x: -16vw;
+    --dot-shift-y: -12vh;
   }
 
   .name {
@@ -258,6 +258,11 @@ body {
   }
 
   .eyes {
+    /* Keeps the two dots side by side — without this, .eyes can get
+       squeezed narrower than its content by the row-reverse layout above,
+       and the inline-block dots wrap onto separate lines instead. */
+    display: flex;
+    flex-shrink: 0;
     /* .animation above is scaled to 50% (transform: scale(0.5)), and since
        transforms compound, this translate's visual effect is also halved —
        so these values need to be roughly double what you'd expect. */
