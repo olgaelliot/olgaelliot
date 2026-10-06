@@ -250,7 +250,7 @@ body {
        across phone aspect ratios. Edit these two numbers to adjust —
        more negative = further left / further up. */
     --dot-shift-x: -2vw;
-    --dot-shift-y: -12vh;
+    --dot-shift-y: -4vh;
   }
 
   .name {
